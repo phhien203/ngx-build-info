@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "patchedFile": {
+      "description": "File where build data is inserted",
+      "type": "string",
+      "default": "src/assets/build.json"
+    },
+    "target2run": {
+      "description": "Target to be executed after build data patched",
+      "type": "string"
+    }
+  }
+}

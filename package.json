@@ -1,0 +1,25 @@
+{
+  "name": "ngx-build-info",
+  "version": "1.0.0",
+  "description": "Custom Angular builder to create build info json file",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "postbuild": "copyfiles --up 1 ./src/**/*.json ./dist",
+    "build:watch": "ts-watch --onSuccess 'npm run postbuild'"
+  },
+  "author": "Hien Pham",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular-devkit/architect": "^0.1500.4",
+    "@angular-devkit/core": "^15.0.4",
+    "@types/node": "^18.11.18",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-watch": "^1.0.8",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "ngx-build-info": "file:"
+  }
+}

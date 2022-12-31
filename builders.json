@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "patch": {
+      "description": "Patch application build info into a json file",
+      "implementation": "./dist/patch",
+      "schema": "./dist/patch/schema.json"
+    }
+  }
+}
