@@ -97,14 +97,14 @@
         "build-info": {
           "builder": "ngx-build-info:patch",
           "configurations": {
-            "dev": {
-              "target2run": "build"
-            },
-            "prod": {
+            "development": {
               "target2run": "serve"
+            },
+            "production": {
+              "target2run": "build"
             }
           },
-          "defaultConfiguration": "prod"
+          "defaultConfiguration": "production"
         }
       }
     }
